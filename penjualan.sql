@@ -87,7 +87,7 @@ CREATE TABLE `tbl_login` (
   `password` varchar(100) NOT NULL,
   `jenis_kelamin` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `no_telp` int(30) NOT NULL,
+  `no_telp` varchar(30) NOT NULL,
   `agama` varchar(30) NOT NULL,
   `alamat` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
