@@ -4,7 +4,9 @@
  */
 package penjualan_barang;
 
+import java.awt.Desktop;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -423,7 +425,7 @@ public class fpenjualan extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btn_back2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 998, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -678,7 +680,11 @@ public class fpenjualan extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_selesaiActionPerformed
 
     private void btn_cetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cetakActionPerformed
-        // TODO add your handling code here:
+        try {
+            Desktop.getDesktop().browse(new URL("http://localhost/laporanpenjualan/invoice.php?lap&fk=" + tot.getText() + "").toURI());
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }//GEN-LAST:event_btn_cetakActionPerformed
 
     private void txt_bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_bayarActionPerformed
