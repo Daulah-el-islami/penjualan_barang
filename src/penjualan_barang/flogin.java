@@ -18,6 +18,7 @@ public class flogin extends javax.swing.JFrame {
      */
     public flogin() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**

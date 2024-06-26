@@ -33,6 +33,7 @@ public class fpenjualan extends javax.swing.JFrame {
      */
     public fpenjualan() {
         initComponents();
+        this.setLocationRelativeTo(null);
         model = new DefaultTableModel();
 
         tbpenjualan.setModel(model);

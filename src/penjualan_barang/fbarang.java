@@ -26,6 +26,7 @@ public class fbarang extends javax.swing.JFrame {
     
     public fbarang() {
         initComponents();
+        this.setLocationRelativeTo(null);
         model = new DefaultTableModel();
         tabelinput.setModel(model);
         model.addColumn("kode_barang");

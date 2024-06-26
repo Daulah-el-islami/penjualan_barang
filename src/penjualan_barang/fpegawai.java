@@ -22,6 +22,7 @@ public class fpegawai extends javax.swing.JFrame {
     
     public fpegawai() {
         initComponents();
+        this.setLocationRelativeTo(null);
         model = new DefaultTableModel();
 
         tb.setModel(model);

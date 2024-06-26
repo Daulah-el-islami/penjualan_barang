@@ -19,6 +19,7 @@ public class fmenu extends javax.swing.JFrame {
      */
     public fmenu() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
