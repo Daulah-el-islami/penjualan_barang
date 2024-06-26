@@ -227,6 +227,7 @@ public class fpegawai extends javax.swing.JFrame {
         txt_alamat.setRows(5);
         jScrollPane2.setViewportView(txt_alamat);
 
+        buttonGroup1.add(laki);
         laki.setForeground(new java.awt.Color(255, 255, 255));
         laki.setText("Laki-Laki");
         laki.addActionListener(new java.awt.event.ActionListener() {
@@ -235,6 +236,7 @@ public class fpegawai extends javax.swing.JFrame {
             }
         });
 
+        buttonGroup1.add(perempuan);
         perempuan.setForeground(new java.awt.Color(255, 255, 255));
         perempuan.setText("Perempuan");
 
@@ -496,20 +498,38 @@ public class fpegawai extends javax.swing.JFrame {
             return;
         }
         String user = (String) model.getValueAt(i, 0);
+
         try {
             Connection c = koneksi.getKoneksi();
+
             String jk = "";
             if (laki.isSelected()) {
                 jk = laki.getText();
-            } else {
+            } else if (perempuan.isSelected()) {
                 jk = perempuan.getText();
             }
-            String sql = "UPDATE  tbl_login SET password =  '" + txt_password2.getText() + "', jenis_kelamin='" + jk + "' WHERE  username ='" + user + "'";
+
+            String email = txt_email.getText();
+            String noTelp = txt_telp.getText();
+            String agama = (String) cb_agama.getSelectedItem();
+            String alamat = txt_alamat.getText();
+
+            String sql = "UPDATE tbl_login SET password = ?, jenis_kelamin = ?, email = ?, no_telp = ?, agama = ?, alamat = ? WHERE username = ?";
             PreparedStatement p = c.prepareStatement(sql);
+
+            p.setString(1, txt_password2.getText());
+            p.setString(2, jk);
+            p.setString(3, email);
+            p.setString(4, noTelp);
+            p.setString(5, agama);
+            p.setString(6, alamat);
+            p.setString(7, user);
+
             p.executeUpdate();
             p.close();
+
         } catch (SQLException e) {
-            System.out.println("Terjadi Error");
+            System.out.println("Terjadi Error: " + e.getMessage());
         } finally {
             loadData();
             txt_username2.setText("");
