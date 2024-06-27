@@ -182,6 +182,7 @@ public class fpenjualan extends javax.swing.JFrame {
         rp = new javax.swing.JLabel();
         tot = new javax.swing.JLabel();
         jumlah = new javax.swing.JTextField();
+        nfaktur = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         btn_back2 = new javax.swing.JButton();
 
@@ -401,6 +402,7 @@ public class fpenjualan extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 50, 10));
+        jPanel2.add(nfaktur, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 400, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -663,7 +665,7 @@ public class fpenjualan extends javax.swing.JFrame {
                         pst.execute();
                         JOptionPane.showMessageDialog(null, "TRANSAKSI SELESAI", "PT PRABU", JOptionPane.INFORMATION_MESSAGE);
                         loadData();
-                        tot.setText(txt_nofaktur.getText());
+                        nfaktur.setText(txt_nofaktur.getText());
                         txt_bayar.setText("");
                         txt_kembalian.setText("");
                         tot.setText("");
@@ -682,7 +684,7 @@ public class fpenjualan extends javax.swing.JFrame {
 
     private void btn_cetakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cetakActionPerformed
         try {
-            Desktop.getDesktop().browse(new URL("http://localhost/laporanpenjualan/invoice.php?lap&fk=" + tot.getText() + "").toURI());
+            Desktop.getDesktop().browse(new URL("http://localhost/laporanpenjualan/invoice.php?lap&fk=" + nfaktur.getText() + "").toURI());
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -769,6 +771,7 @@ public class fpenjualan extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jumlah;
+    private javax.swing.JTextField nfaktur;
     private javax.swing.JLabel rp;
     private javax.swing.JTable tbpenjualan;
     private javax.swing.JLabel tot;

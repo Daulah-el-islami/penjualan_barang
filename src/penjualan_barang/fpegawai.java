@@ -116,22 +116,27 @@ public class fpegawai extends javax.swing.JFrame {
         jLabel2.setText("Pengolahan data pegawai");
 
         jPanel2.setBackground(new java.awt.Color(44, 62, 80));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(236, 240, 241));
         jLabel4.setText("Username");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 31, 107, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(236, 240, 241));
         jLabel5.setText("Password");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 77, 107, -1));
 
         txt_username2.setBackground(new java.awt.Color(108, 122, 137));
         txt_username2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_username2.setForeground(new java.awt.Color(228, 241, 254));
+        jPanel2.add(txt_username2, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 31, 188, -1));
 
         txt_password2.setBackground(new java.awt.Color(108, 122, 137));
         txt_password2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_password2.setForeground(new java.awt.Color(228, 241, 254));
+        jPanel2.add(txt_password2, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 78, 188, -1));
 
         btn_tambah.setBackground(new java.awt.Color(34, 167, 240));
         btn_tambah.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -142,18 +147,22 @@ public class fpegawai extends javax.swing.JFrame {
                 btn_tambahActionPerformed(evt);
             }
         });
+        jPanel2.add(btn_tambah, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 286, 150, 38));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(236, 240, 241));
         jLabel6.setText("Retype");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 129, 107, -1));
 
         txt_retype.setBackground(new java.awt.Color(108, 122, 137));
         txt_retype.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_retype.setForeground(new java.awt.Color(228, 241, 254));
+        jPanel2.add(txt_retype, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 130, 188, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(236, 240, 241));
         jLabel7.setText("No. Telp");
+        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 31, 92, -1));
 
         tb.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -173,17 +182,22 @@ public class fpegawai extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tb);
 
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 358, 801, 214));
+
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(236, 240, 241));
         jLabel8.setText("Jenis Kelamin");
+        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 171, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(236, 240, 241));
         jLabel9.setText("Email");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 211, 113, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(236, 240, 241));
         jLabel10.setText("Agama");
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 77, 92, -1));
 
         cb_agama.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Islam", "Kristen", "Katolik", "Hindu", "Budha", "Ateis" }));
         cb_agama.addActionListener(new java.awt.event.ActionListener() {
@@ -191,10 +205,12 @@ public class fpegawai extends javax.swing.JFrame {
                 cb_agamaActionPerformed(evt);
             }
         });
+        jPanel2.add(cb_agama, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 79, 185, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(236, 240, 241));
         jLabel11.setText("Alamat");
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 129, 92, -1));
 
         btn_hapus.setBackground(new java.awt.Color(34, 167, 240));
         btn_hapus.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -205,6 +221,7 @@ public class fpegawai extends javax.swing.JFrame {
                 btn_hapusActionPerformed(evt);
             }
         });
+        jPanel2.add(btn_hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 286, 150, 38));
 
         btn_ubah.setBackground(new java.awt.Color(34, 167, 240));
         btn_ubah.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -215,18 +232,23 @@ public class fpegawai extends javax.swing.JFrame {
                 btn_ubahActionPerformed(evt);
             }
         });
+        jPanel2.add(btn_ubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(595, 286, 150, 38));
 
         txt_telp.setBackground(new java.awt.Color(108, 122, 137));
         txt_telp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_telp.setForeground(new java.awt.Color(228, 241, 254));
+        jPanel2.add(txt_telp, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 32, 188, -1));
 
         txt_email.setBackground(new java.awt.Color(108, 122, 137));
         txt_email.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txt_email.setForeground(new java.awt.Color(228, 241, 254));
+        jPanel2.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 212, 188, -1));
 
         txt_alamat.setColumns(20);
         txt_alamat.setRows(5);
         jScrollPane2.setViewportView(txt_alamat);
+
+        jPanel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 129, 185, 107));
 
         buttonGroup1.add(laki);
         laki.setForeground(new java.awt.Color(255, 255, 255));
@@ -236,123 +258,12 @@ public class fpegawai extends javax.swing.JFrame {
                 lakiActionPerformed(evt);
             }
         });
+        jPanel2.add(laki, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 171, -1, -1));
 
         buttonGroup1.add(perempuan);
         perempuan.setForeground(new java.awt.Color(255, 255, 255));
         perempuan.setText("Perempuan");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
-                            .addComponent(jLabel8))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn_tambah, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(laki)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(perempuan)))
-                        .addGap(40, 40, 40))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
-                                .addGap(14, 14, 14))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txt_retype, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_password2)
-                            .addComponent(txt_username2, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(btn_hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
-                        .addComponent(btn_ubah, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(txt_telp, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(53, Short.MAX_VALUE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                                    .addComponent(cb_agama, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(56, 56, 56))))))
-            .addComponent(jScrollPane1)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(24, 24, 24)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(txt_username2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(24, 24, 24)
-                                .addComponent(txt_password2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel7)
-                                .addComponent(txt_telp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(cb_agama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel10))))
-                        .addGap(28, 28, 28)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(txt_retype, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel11))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(perempuan)
-                                        .addComponent(laki))
-                                    .addComponent(jLabel8))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel9)
-                                    .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(50, 50, 50)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_tambah, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_hapus, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn_ubah, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        jPanel2.add(perempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 171, -1, -1));
 
         btn_back.setBackground(new java.awt.Color(242, 38, 19));
         btn_back.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
